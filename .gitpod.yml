@@ -1,5 +1,6 @@
 image:
   file: .devcontainer/Dockerfile
+  context: .devcontainer
 
 github:
   prebuilds:
