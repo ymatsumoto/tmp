@@ -13,14 +13,12 @@ github:
 
 vscode:
   extensions:
-    - ms-python.python
-    - ms-python.vscode-pylance
     - njpwerner.autodocstring
     - KevinRose.svg-viewer
 
 tasks:
   - name: init
     init: conda init
-    command: mkdir -p /home/vscode/.xdg_runtime && chmod 0700 /home/vscode/.xdg_runtime
+    command: mkdir -p /home/gitpod/.xdg_runtime && chmod 0700 /home/gitpod/.xdg_runtime
     env:
-      XDG_RUNTIME_DIR": "/home/vscode/.xdg_runtime"
+      XDG_RUNTIME_DIR": "/home/gitpod/.xdg_runtime"
