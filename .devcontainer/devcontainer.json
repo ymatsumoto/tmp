@@ -1,5 +1,11 @@
 {
   "build": {
+    "name": "genome",
     "dockerfile": "Dockerfile"
-  }
+  },
+  "containerEnv": {
+    "XDG_RUNTIME_DIR": "/home/vscode/.xdg_runtime"
+  },
+  "postCreateCommand": "conda init",
+  "postCreateCommand": "mkdir -p /home/vscode/.xdg_runtime && chmod 0700 /home/vscode/.xdg_runtime"
 }
