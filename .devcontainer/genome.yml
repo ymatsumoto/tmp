@@ -6,6 +6,7 @@ dependencies:
   - seqkit
   - minimap2
   - samtools
+  - flye
   - unicycler
   - bandage
   - mummer4

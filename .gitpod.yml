@@ -2,14 +2,14 @@ image:
   file: .devcontainer/Dockerfile
   context: .devcontainer
 
-github:
-  prebuilds:
-    branches: true
-    pullRequests: true
-    pullRequestsFromForks: true
-    addCheck: true
-    addComment: false
-    addBadge: true
+#github:
+#  prebuilds:
+#    branches: true
+#    pullRequests: true
+#    pullRequestsFromForks: true
+#    addCheck: true
+#    addComment: false
+#    addBadge: true
 
 vscode:
   extensions:
@@ -19,4 +19,4 @@ tasks:
   - name: init
     command: mkdir -p /home/gitpod/.xdg_runtime && chmod 0700 /home/gitpod/.xdg_runtime
     env:
-      XDG_RUNTIME_DIR": "/home/gitpod/.xdg_runtime"
+      "XDG_RUNTIME_DIR": "/home/gitpod/.xdg_runtime"
