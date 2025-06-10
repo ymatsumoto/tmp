@@ -10,6 +10,7 @@ dependencies:
   - unicycler
   - bandage
   - mummer4
+  - gnuplot
   - ncbi-amrfinderplus
   - mafft
   - fasttree
