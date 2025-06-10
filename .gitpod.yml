@@ -14,11 +14,9 @@ github:
 vscode:
   extensions:
     - njpwerner.autodocstring
-    - KevinRose.svg-viewer
 
 tasks:
   - name: init
-    init: conda init
     command: mkdir -p /home/gitpod/.xdg_runtime && chmod 0700 /home/gitpod/.xdg_runtime
     env:
       XDG_RUNTIME_DIR": "/home/gitpod/.xdg_runtime"

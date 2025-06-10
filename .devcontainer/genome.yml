@@ -3,10 +3,12 @@ channels:
   - conda-forge
   - bioconda
 dependencies:
-  - unicycler
-  - mummer4
-  - bandage
   - seqkit
+  - minimap2
+  - samtools
+  - unicycler
+  - bandage
+  - mummer4
   - ncbi-amrfinderplus
   - mafft
   - fasttree
