@@ -7,6 +7,8 @@ Access to [gitpod website](https://www.gitpod.io/gitpod-or-classic) and activate
 gitpod:~$ wget http://www.gen-info.osaka-u.ac.jp/~matsumoto/data/mlstverse-singularity.sif
 gitpod:~$ wget http://www.gen-info.osaka-u.ac.jp/~matsumoto/data/Loci.fasta.gz
 gitpod:~$ wget http://www.gen-info.osaka-u.ac.jp/~matsumoto/data/JCM13569_010x.fastq.gz
+gitpod:~$ wget http://www.gen-info.osaka-u.ac.jp/~matsumoto/data/db_20250331.tar
+gitpod:~$ tar xf db_20250331.tar
 gitpod:~$ gunzip Loci.fasta.gz
 ```
 
@@ -19,11 +21,13 @@ gitpod:~$ apptainer shell mlstverse-singularity.sif
 ```
 
 ```R
-gitpod:~$ R
+Apptainer> R
 > library(mlstverse)
 > library(mlstverse.Mycobacterium.db)
 > result <- mlstverse("JCM13569.bam", th.pvalue=0, threads=4)
 > data.frame(result$score$JCM13569.bam)
+> quit()
+Apptainer> exit
 ```
 
 ## Genome assembly and AMR detection
